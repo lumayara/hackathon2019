@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <base href="./../">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Su gestor de contabilidad">
+    <meta name="keyword" content="contabilidad, servicios contables, elizondo, julema, egContas">
+    <title>egContas </title>
+    <link rel="shortcut icon" id="page-icon" href="img/icon.png">
+    
+    <link href="vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/customStyle.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+</head>
+
+<body class="app flex-row align-items-center">
+    <div class="container" >
+        <div id="dBody" class="row justify-content-center" style="display: none">
+            <div class="col-md-6">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body animated fadeIn" align="center">
+                            <img class="img-fluid" src="img/brand/logo_large.png" alt="egContas Logo">
+
+                            <p class="text-muted">Ingrese a su cuenta</p>
+
+                            <div id="formMail"> </div>
+                            <div id="formPass"> </div>
+
+                            <div class="mb-4" id="dError" style="display: none"> 
+                                <h6 style="color: red">Credenciales inválidas</h6>
+                            </div>
+
+                            <div class="row" align="center">
+                                <div class="col-12">
+                                    <button id="btn-login" class="btn btn-primary px-4" type="button">Ingresar</button>
+                                </div>
+                                <!-- <div class="col-6 text-right"> -->
+                                    <!-- <button class="btn btn-link px-0" type="button">Forgot password?</button> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dLoad" align="center">
+            <svg class="modalLoader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+                <circle cx="170" cy="170" r="160" stroke="#226093"/>
+                <circle cx="170" cy="170" r="135" stroke="#226093"/>
+                <circle cx="170" cy="170" r="110" stroke="#226093"/>
+            </svg>
+        </div>
+    </div>
+
+    <div id="dModals"></div>
+
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="vendors/popper.js/js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/pace-progress/js/pace.min.js"></script>
+    <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+    <script src="vendors/bootstrap-notify/js/bootstrap-notify.min.js"></script>
+    <script src="modals/loader/modal.js"></script>
+    <script src="js/commonjs.js"></script>
+
+        <!-- Specific -->
+    <script src="js/libs/form.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
