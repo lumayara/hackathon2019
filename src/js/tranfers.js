@@ -79,7 +79,7 @@ var mosp = {
                 var rows = new Array();
                 $.each(response.data, function(index, file){
                     col = new Array();
-                    col[0] = { data: plGlobals.getDateFormat(file.inserted)};
+                    col[0] = { data: plGlobals.getDateFormat(file.inserted, true)};
                     col[1] = { data: file.phone};
                     col[2] = { data: file.value };
                     rows[rows.length] = col;
