@@ -17,7 +17,7 @@ The next option is to transfer or pay. To transfer to someone, the user can sear
 
 
 
-The next option is to see where they can use their points or what was redeemed as well as see what other opportunities to get more points are.
+The next option is to see where they can use their points or what was redeemed as well as see what other opportunities to get more points are. 
 
 The section of other products is where we envision the use of the app integrated with digital signature to access/purchases services through it as for an example the Seguro Estudantil.
 	
