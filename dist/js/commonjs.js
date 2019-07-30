@@ -12,7 +12,7 @@ var CODES    = {
 var CONSTANS    = {
 
     PRINT                   : false,
-    IS_MOBILE               : false,
+    IS_MOBILE               : true,
 
     OK                      : 100,
     ERROR                   : 200,
@@ -30,6 +30,7 @@ var CONSTANS    = {
     TOKEN                   : "tokenoauth",
     USER                    : "user_info",
     LOGINMSG                : "login_msg",
+    TRANSFERMSG             : "transfer_msg",
 
     API_VERSION             : "/api/v1",
     LOCAL_END_POINT         : "http://localhost:5000",
@@ -81,7 +82,7 @@ var plGlobals   = {
         plGlobals.endPoint+=CONSTANS.API_VERSION;
 
         if (CONSTANS.IS_MOBILE){
-            plGlobals.endPoint="https://julema.herokuapp.com"+CONSTANS.API_VERSION;
+            plGlobals.endPoint="https://fmimh.herokuapp.com"+CONSTANS.API_VERSION;
             CONSTANS.PRINT = false;
         }
     },

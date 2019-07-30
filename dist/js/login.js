@@ -1,7 +1,6 @@
 $( document ).ready(function(){
     if (plGlobals.isLogged()){
-        // plGlobals.rediret("app/admin/crm");
-        mosp.init();
+        plGlobals.rediret("app/home");
     }
     else{
         mosp.init();
@@ -57,6 +56,11 @@ var mosp = {
             mosp.validateForm();
         });
 
+        $("#btn-register").click(function(){
+            plGlobals.rediret("app/register");
+        });
+
+
         if (localStorage.getItem(CONSTANS.LOGINMSG)){
             plGlobals.notification({
                 title       : "<b>Su sesión ha vencido</b>",
@@ -88,7 +92,7 @@ var mosp = {
                 if (response.status == CODES.OK){
                     localStorage.setItem(CONSTANS.TOKEN, response.token);
                     localStorage.setItem(CONSTANS.USER, JSON.stringify(response.user));
-                    plGlobals.rediret("app/admin/crm");
+                    plGlobals.rediret("app");
                 }
                 else{
                     $("#dError").show();

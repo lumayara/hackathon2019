@@ -12,7 +12,7 @@ var CODES    = {
 var CONSTANS    = {
 
     PRINT                   : false,
-    IS_MOBILE               : false,
+    IS_MOBILE               : true,
 
     OK                      : 100,
     ERROR                   : 200,
@@ -82,7 +82,7 @@ var plGlobals   = {
         plGlobals.endPoint+=CONSTANS.API_VERSION;
 
         if (CONSTANS.IS_MOBILE){
-            plGlobals.endPoint="https://julema.herokuapp.com"+CONSTANS.API_VERSION;
+            plGlobals.endPoint="https://fmimh.herokuapp.com"+CONSTANS.API_VERSION;
             CONSTANS.PRINT = false;
         }
     },
