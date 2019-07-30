@@ -38,6 +38,19 @@ _app.post('/', function (req, res) {
 	});
 });
 
+
+_app.post('/backend', function (req, res) {
+	req.body.user = "5d4076a5d827f7c10f281ee0";
+	req.body.name = "Ayuda Social";
+	_mModels.do({
+	    collection  : MODELS.TRANFERS,
+	    action		: GLOBALS.FUCTIONS_MODELS.INSERT,
+	    data    	: req.body
+	}, function (result) {
+		_Mcommands.sendResponse(result, req, res);
+	});
+});
+
 _app.post('/list', function (req, res) {
 
 	var filters = {
