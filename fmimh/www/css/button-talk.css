@@ -1,0 +1,33 @@
+#Talk-Btn {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 200px;
+  height: 200px;
+  border: 0;
+  border-radius: 50%;
+  padding: .7em 1em;
+  margin: 4em auto 3em;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #39C2C9 0%, #3FC8C9 80%, #3FC8C9 100%);
+  box-shadow: 2px 5px 30px rgba(63, 200, 201, .4);
+
+  will-change: transform, filter;
+  transition: all 0.3s ease-out;
+}
+#Talk-Btn .fa {
+  font-size: 130px;
+  line-height: 200px;
+  margin: 0;
+  text-shadow: 1px 2px 2px #2a8b90;
+}
+#Talk-Btn:hover {
+  transform: scale(.92);
+}
+#Talk-Btn:active {
+  filter: brightness(.8);
+}
+#Talk-Btn:focus {
+  outline: 0;
+}

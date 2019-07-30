@@ -91,6 +91,7 @@ var mosp = {
             function(response) {
                 if (response.status == CODES.OK){
                     localStorage.setItem(CONSTANS.TOKEN, response.token);
+                    localStorage.removeItem(CONSTANS.USER);
                     localStorage.setItem(CONSTANS.USER, JSON.stringify(response.user));
                     plGlobals.rediret("app");
                 }
