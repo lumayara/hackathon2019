@@ -12,14 +12,14 @@ var mosp = {
     formElements        : [
         {
             id          : "formMail",
-            name        : "email",
-            type        : "email",
+            name        : "phone",
+            type        : "number",
             classDiv    : "mb-3",
             required    : true,
             icon        : "fa fa-envelope",
             msg         : {
-                error       : "Ingrese un email válido",
-                placeholder : "Email"
+                error       : "Ingrese el teléfono",
+                placeholder : "Teléfono"
             }
         },
         {
@@ -74,7 +74,7 @@ var mosp = {
 
     setEmailForm        : function(){
         let userInfo = JSON.parse(localStorage.getItem(CONSTANS.USER));
-        (userInfo && userInfo.email) ? mosp.formLib.setDefaultDatabyName({email:userInfo.email}) : null;
+        (userInfo && userInfo.email) ? mosp.formLib.setDefaultDatabyName({phone:userInfo.phone}) : null;
     },
 
     validateForm        : function () {

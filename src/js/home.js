@@ -25,7 +25,7 @@ var mosp = {
             mosp.initListeners();
         });
 
-        $("#titleHome").text("Bienvenido "+JSON.parse(localStorage.getItem(CONSTANS.USER)).name)
+        $("#titleHome").text("Bienvenid@ "+JSON.parse(localStorage.getItem(CONSTANS.USER)).name)
     },
 
 

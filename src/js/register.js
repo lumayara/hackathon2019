@@ -106,7 +106,7 @@ var mosp = {
         plGlobals.backEnd('POST', "/admin/newAccount" , pData,
             function(response) {
                 if (response.status == CODES.OK){
-                    localStorage.setItem(CONSTANS.USER, JSON.stringify({email:pData.email}));
+                    localStorage.setItem(CONSTANS.USER, JSON.stringify({phone:pData.phone}));
                     plGlobals.rediret("app");
                 }
                 else{

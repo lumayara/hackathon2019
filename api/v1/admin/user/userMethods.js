@@ -64,7 +64,7 @@ var userMethods     = {
         _mModels.do({
             collection  : MODELS.USERS,
             action		: GLOBALS.FUCTIONS_MODELS.FINDONE,
-            filters    	: { email: pData.email },
+            filters    	: { phone: pData.phone },
             select      : 'orgs name email lastName penddings state password phone',
         }, function (result) {
             if (result.status == CODES.OK){

@@ -35,11 +35,12 @@ var globals  			= {
 	EXEC_AUTH					: [
 		'/api/v1/admin/user/auth',
 		'/api/v1/admin/newAccount',
+		'/api/v1/admin/tranfers/backend',
 	],
 
 	HTTP_METHODS				: ["POST"],
 
-	ALLOW_DEVICES				: ["postman", "browser"],
+	ALLOW_DEVICES				: ["postman", "browser", "backend"],
 	ALLOW_STATES				: ["active", "logout"],
 	DEFAULT_STATE				: "active",
 	USER_STATES					: ["wait","declined","accept","active","blocked"],
