@@ -12,7 +12,7 @@ var CODES    = {
 var CONSTANS    = {
 
     PRINT                   : false,
-    IS_MOBILE               : true,
+    IS_MOBILE               : false,
 
     OK                      : 100,
     ERROR                   : 200,

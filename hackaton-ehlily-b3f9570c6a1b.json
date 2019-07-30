@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hackaton-ehlily",
+  "private_key_id": "b3f9570c6a1b799295931ac82be7fed2e2502a2b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDxK5leDfFk1TKL\nkE2XCZvWCjisXMhWTWxmFTieVs3Ak7ncrRdJ9xoUgfOS80rkpZ3VHt3A9B0vP993\niOxDnRdus0febVhdTKG4gpsKa+z+bJA1f2r3r3A23MVdTlVwWE2H54FDnE5GpBdy\nmldfD301la3HIZXnO5p9gdg4v0/ffKj63oAXfqpFjwC5KT1DIh4I67BzAoa+sJQM\nkrdeXiIkq0diI0Zfbv8o4FoNvljgQ0Rnrx83RRNeBS06/bSbiV5vn63ZEJkAPuCf\nE02VKJPkCmey52ETlbjdadQR6ZXu9lQPxUzC1mx4i17m+IH0ufQgneiox8GLJV5D\nWT+/3FQ3AgMBAAECggEAEO9Y06vy+XunEvnNGQAJu1v4YtIZF0ZUiE6RLT03MYCu\nGnrlGcKKSEpfyj/fUHL4xFBojfYWXo0DqicpQA416QYZ09qly9dnu8cgD/lIKQ2C\nit8pqb7eCFw0V7r6cOsidpqhDxhYvskjBF8mJ3y09CBQlZ0cI6Kh1JJblpCIkU7S\nwDjaYCrFYoHRuGg8r86lo7kcrZu1dlbbeI/WnI0Tx6D+hyzuCgH8sCQfrWhVFUrY\n4Mwn/6TbgzsZ/ggBl301kttknS/FjGGT59K9yB+qC2aojl6RpFz35LEaVni9EpFc\n7zcavlBtduNa/x9YHfLHNBAJi7P2ewKBl5tNzSg4QQKBgQD8k2F7ESOmTAjeE5Jg\naP9CgI3JwmKldPSEKzl2STV4tBhbrTDB2Juy4SFtq6WCOGU+VrNgGAeODMYOI6Fr\nwsI5ZRYF3FOGbi1AV5VlRfRzoPnwDwGLI0aVzO+b4cmvr8R6mpseeRdMPJlqf0Vl\nLID9p5jGNo3GEEwjPmH2TTbRcQKBgQD0cKIlV/Qg8QBkm+mTiC11KBasy/jTRGBl\nzVxqVkLJ4x/fkgsJpd1FtYKh+qDglBFNn6rRtoA1w7HenGw3EuuT2TKSe4yGKDOn\ni1JtqD09Wg4iI3Ig/BF8pPLf/FSo+7/W+lYEmXO06QOKIQh88la3Hw5j/YvbRdX4\ne2daxzMsJwKBgQCkWe6jmxp8epuGjmvASnJXPrmEoPV5vqnhWxMQEkE2ItJ6zS6d\n5Koj8vTCnV+cZcATmW0tSVWZLFywFKVULq4dlNaIx76eChFt/c/bz3Jqz0Pz3n/d\nnv2uOmVsJLcNmC0crn/ji14KoKAfuWNZm2TwKV9zE0qbqD0y7cPm9oWGMQKBgEBC\nwA3LMo3abb0FVAGKAlFTaaqhsNdxmVoKA+qcpNBIWl+/GBHAPgyObDpDFjoUEvxy\nJkkdjlUUDlW0j6pm2fGzXt0th8LZHMNGGDRlzzuqyh5lbSKIwdwfzQ3fWy5ViJhu\nlWB+KvH7dAfDKWUXnH5ltrXIuRS7JkY9wu0VgzlvAoGBAJ4t4IyWrabyqmyEZwwb\njPZt7ZixJAFiBayu/5qCZJKfQMmfpyOwC9twraUC/Ohy1ulwF7Hir1tB03/5fDPC\nKkIbckIg5jnMF83jRNxPkGpLEWIeJYx8N3PgyHEj0TbK5iRNIKsWTnVm2drtn+JC\nQ+oD0MwILD6edoXYCdqRQrxs\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-edqtit@hackaton-ehlily.iam.gserviceaccount.com",
+  "client_id": "117717521730333220357",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-edqtit%40hackaton-ehlily.iam.gserviceaccount.com"
+}
