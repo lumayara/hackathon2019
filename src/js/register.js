@@ -1,6 +1,6 @@
 $( document ).ready(function(){
     if (plGlobals.isLogged()){
-        plGlobals.rediret("app/home");
+        plGlobals.rediret("app/p2p");
     }
     else{
         mosp.init();
@@ -11,6 +11,28 @@ var mosp = {
 
     formElements        : [
         {
+            id          : "formName",
+            name        : "name",
+            type        : "text",
+            classDiv    : "mb-3",
+            required    : true,
+            icon        : "fa fa-user",
+            msg         : {
+                error       : "Ingrese el nombre",
+                placeholder : "Nombre"
+            }
+        },{
+            id          : "formPhone",
+            name        : "phone",
+            type        : "number",
+            classDiv    : "mb-3",
+            required    : true,
+            icon        : "fa fa-phone",
+            msg         : {
+                error       : "Ingrese el número teléfonico",
+                placeholder : "Teléfono"
+            }
+        },{
             id          : "formMail",
             name        : "email",
             type        : "email",
@@ -52,12 +74,12 @@ var mosp = {
             }
         });
 
-        $("#btn-login").click(function(){
+        $("#btn-register").click(function(){
             mosp.validateForm();
         });
 
-        $("#btn-register").click(function(){
-            plGlobals.rediret("app/register");
+        $("#btn-login").click(function(){
+            plGlobals.rediret("app");
         });
 
 
@@ -69,12 +91,6 @@ var mosp = {
             });
             localStorage.removeItem(CONSTANS.LOGINMSG);
         }
-        mosp.setEmailForm();
-    },
-
-    setEmailForm        : function(){
-        let userInfo = JSON.parse(localStorage.getItem(CONSTANS.USER));
-        (userInfo && userInfo.email) ? mosp.formLib.setDefaultDatabyName({email:userInfo.email}) : null;
     },
 
     validateForm        : function () {
@@ -87,11 +103,10 @@ var mosp = {
 
     requestLogin: function(pData) {
         $("#dError").hide();
-        plGlobals.backEnd('POST', "/admin/user/auth" , pData,
+        plGlobals.backEnd('POST', "/admin/newAccount" , pData,
             function(response) {
                 if (response.status == CODES.OK){
-                    localStorage.setItem(CONSTANS.TOKEN, response.token);
-                    localStorage.setItem(CONSTANS.USER, JSON.stringify(response.user));
+                    localStorage.setItem(CONSTANS.USER, JSON.stringify({email:pData.email}));
                     plGlobals.rediret("app");
                 }
                 else{

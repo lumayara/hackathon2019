@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <base href="./../../">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Su gestor de contabilidad">
+    <meta name="keyword" content="contabilidad, servicios contables, elizondo, julema, egContas">
+    <title id="page-title"></title>
+    <link rel="shortcut icon" id="page-icon" href="img/icon.png">
+    <!-- Icons-->
+    <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/customStyle.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <!-- Pages styles -->
+    <link href="node_modules/bootstrap-fileinput/css/fileinput.min.css" rel="stylesheet">
+
+</head>
+
+<body id="body" class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
+    <div id="dHeader" name="hideLoading" style="display: none"></div>
+
+    <div id="app-body" class="app-body" name="hideLoading" style="display: none">
+
+        <div class="sidebar" id="dNav"></div>
+
+        <main class="main">
+            <div class="container-fluid mobile-container-fluid">
+                <div class="animated fadeIn">
+                    <div class="card mt-3 mobile-card-mt">
+                        <div class="card-body animated fadeInmobile-card-body">
+                            <div id="dTranfers"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>  
+
+    <div id="dModals"></div>
+
+    <div id="dLoad" class="in-middle-v"align="center">
+        <svg class="modalLoader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+            <circle cx="170" cy="170" r="160" stroke="#226093"/>
+            <circle cx="170" cy="170" r="135" stroke="#226093"/>
+            <circle cx="170" cy="170" r="110" stroke="#226093"/>
+        </svg>
+    </div>
+
+    <footer id="dFooter" class="" style="display: none"></footer>
+
+    <!--Common JS-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/pace-progress/pace.min.js"></script>
+    <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="node_modules/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="modals/loader/modal.js"></script>
+    <script src="js/commonjs.js"></script>
+    <!--Page JS-->
+    <script src="js/libs/table.js"></script>
+    <script src="js/tranfers.js"></script>
+
+</body>
+
+</html>

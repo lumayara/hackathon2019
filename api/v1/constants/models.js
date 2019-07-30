@@ -17,7 +17,8 @@ var models          = {
     SESSIONS        : 'SESSIONS',
     ORG             : 'ORG',
     BILLS           : 'BILLS',
-    CLIENTS			: 'CLIENTS'
+    CLIENTS			: 'CLIENTS',
+    TRANFERS		: 'TRANFERS'
 }
 
 module.exports 	    = models;

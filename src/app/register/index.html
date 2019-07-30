@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-    <base href="./../">
+    <base href="./../../">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -31,21 +31,24 @@
                         <div class="card-body animated fadeIn" align="center">
                             <!-- <img class="img-fluid" src="img/brand/logo_large.png" alt="egContas Logo"> -->
 
-                            <p class="text-muted">Ingrese a su cuenta</p>
+                            <p class="text-muted">Registre su cuenta</p>
 
+                            <div id="formName"> </div>
+                            <div id="formId"> </div>
                             <div id="formMail"> </div>
+                            <div id="formPhone"> </div>
                             <div id="formPass"> </div>
 
                             <div class="mb-4" id="dError" style="display: none"> 
-                                <h6 style="color: red">Credenciales inválidas</h6>
+                                <h6 style="color: red">Cuenta ya registrada</h6>
                             </div>
 
                             <div class="row" align="center">
                                 <div class="col-12">
-                                    <button id="btn-login" class="btn btn-primary px-4" type="button">Ingresar</button>
+                                    <button id="btn-register" class="btn btn-primary px-4" type="button">Registrar</button>
                                 </div>
                                 <div class="col-12">
-                                    <button id="btn-register" class="btn btn-link px-0" type="button">Registrarme</button>
+                                    <button id="btn-login"  class="btn btn-link px-0" type="button">Iniciar sesíon</button>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +79,7 @@
 
         <!-- Specific -->
     <script src="js/libs/form.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
 </body>
 
 </html>

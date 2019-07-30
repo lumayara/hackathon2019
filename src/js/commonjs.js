@@ -30,6 +30,7 @@ var CONSTANS    = {
     TOKEN                   : "tokenoauth",
     USER                    : "user_info",
     LOGINMSG                : "login_msg",
+    TRANSFERMSG             : "transfer_msg",
 
     API_VERSION             : "/api/v1",
     LOCAL_END_POINT         : "http://localhost:5000",

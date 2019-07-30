@@ -65,7 +65,7 @@ var userMethods     = {
             collection  : MODELS.USERS,
             action		: GLOBALS.FUCTIONS_MODELS.FINDONE,
             filters    	: { email: pData.email },
-            select      : 'orgs name email lastName penddings state password',
+            select      : 'orgs name email lastName penddings state password phone',
         }, function (result) {
             if (result.status == CODES.OK){
 				if (result.data.state != GLOBALS.USER_BLOCKED){

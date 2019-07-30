@@ -18,6 +18,7 @@ var _mRoles 	 	= require('../models/m_roles.js').schema();
 var _mUsers 	    = require('../models/m_user.js');
 var _mLog 	 	    = require('../models/m_log.js');
 var _mSessions      = require('../models/m_sessions.js');
+var _mTranfers      = require('../models/m_transfers.js');
 
 //Modules
 var _Mdftmethods    = require('../modules/defaultMethods.js');
@@ -31,7 +32,8 @@ var models          = {
     USERS           : _mongoose.model(COLLECTIONS.USERS         , _mUsers),
     LOG             : _mongoose.model(COLLECTIONS.LOG           , _mLog),
     SESSIONS        : _mongoose.model(COLLECTIONS.SESSIONS      , _mSessions),
-    ORG             : _mongoose.model(COLLECTIONS.ORG           , _mOrg)
+    ORG             : _mongoose.model(COLLECTIONS.ORG           , _mOrg),
+    TRANFERS        : _mongoose.model(COLLECTIONS.TRANFERS      , _mTranfers),
 }
 
 module.exports      = {

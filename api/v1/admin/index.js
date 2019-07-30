@@ -25,6 +25,7 @@ var _userMethods    = require('./user/userMethods.js');
 var _app 		    = require('../modules/express.js').getDefaultApp();
 
 _app.use('/user', require('./user'));
+_app.use('/tranfers', require('./tranfers'));
 _app.use('/org', require('./org'));
 
 /**

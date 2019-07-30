@@ -20,6 +20,7 @@ var collections 		=  {
 	SESSIONS 					: "sessions",
 	LOG 					    : "logs",
 	BILLS 					    : "ebills",
+	TRANFERS					: "tranfers"
 
 };
 
