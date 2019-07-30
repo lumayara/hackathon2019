@@ -134,6 +134,10 @@ var plGlobals   = {
     },
 
     configPage: function (pModals, pId, pCallback) {
+        let user = JSON.parse(localStorage.getItem(CONSTANS.USER));
+        console.log(user);
+
+        // 
         if (plGlobals.isLogged()){
             pModals.push(CONSTANS.LOADER_MODAL);
             $.each(pModals, function( index , path ) {
@@ -142,6 +146,9 @@ var plGlobals   = {
             $('#dNav').load(CONSTANS.NAV, function () {
                $('#dHeader').load(CONSTANS.HEADER, function () {
                     $('#dFooter').load(CONSTANS.FOOTER, function () {
+                        if (user._id = "5d40857cfc3d150004605bd0"){
+                            $("#img-avatar").html('<img  class="img-avatar" src="img/avatars/maria.png">');
+                        }
                         $('#page-title').text(CONSTANS.PAGE_TITLE);
                         $('#page-icon').attr("href", CONSTANS.PAGE_ICON);
                         $("#dLoad").hide();
