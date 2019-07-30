@@ -13,10 +13,26 @@ function synthVoice(text) {
   synth.speak(utterance);
 }
 
-synthVoice("Sistema inicializado");
+// synthVoice("Sistema inicializado");
+
+var Permission = window.plugins.Permission
+ 
+var permission = 'android.permission.RECORD_AUDIO'
+
 
 document.querySelector('#Talk-Btn').addEventListener('click', () => {
   recognition.start();
+   console.log("TALK");
+Permission.has(permission, function(results) {
+    if (!results[permission]) {
+        Permission.request(permission, function(results) {
+            if (result[permission]) {
+                // permission is granted
+            }
+        }, alert)
+    }
+}, alert)
+
 });
 
 recognition.addEventListener('result', (e) => {
@@ -42,6 +58,16 @@ recognition.addEventListener('result', (e) => {
   .then(response => response.json())
   .then(function(myJson) {
     console.log(myJson);
+
+    if (myJson.response.parameters.fields.number && myJson.response.parameters.fields.number.numberValue &&
+      myJson.response.parameters.fields['phone-number'] && myJson.response.parameters.fields['phone-number'].stringValue){
+      let forRequest = { 
+        value : myJson.response.parameters.fields.number.numberValue,
+        phone :  myJson.response.parameters.fields['phone-number'].stringValue
+      }
+      console.log(forRequest);
+      requestTranfer(forRequest);
+    }
     synthVoice(myJson.data);
   }); // parses JSON response into native Javascript objects 
   
@@ -53,3 +79,26 @@ recognition.addEventListener('result', (e) => {
   // We will use the Socket.IO here later…
 });
 
+
+function requestTranfer(pData)  {
+        console.log(pData);
+        let userInfo = JSON.parse(localStorage.getItem(CONSTANS.USER));
+        pData.user = userInfo._id;
+        pData.name = userInfo.name;
+        $("#dErrorTranfer").hide();
+        plGlobals.backEnd('POST', "/admin/tranfers" , pData,
+            function(response) {
+                if (response.status == CODES.OK){
+                    localStorage.setItem(CONSTANS.TRANSFERMSG, true);
+                    // plGlobals.rediret("app/home");
+                    plGlobals.notification({
+                title       : "<b>Transferencia realizada</b>",
+                type        : "success",
+            });
+                }
+                else{
+                    $("#dErrorTranfer").show();
+                }
+            }
+        );
+    };
