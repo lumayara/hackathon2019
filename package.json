@@ -50,6 +50,7 @@
     "classnames": "^2.2.5",
     "core-js": "^2.6.5",
     "daterangepicker": "^3.0.5",
+    "dialogflow": "^0.10.3",
     "express": "^4.15.2",
     "flag-icon-css": "^3.2.1",
     "font-awesome": "4.7.0",
@@ -65,6 +66,7 @@
     "perfect-scrollbar": "^1.4.0",
     "popper.js": "^1.14.7",
     "simple-line-icons": "2.4.1",
+    "uuid": "^3.3.2",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {

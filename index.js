@@ -29,9 +29,13 @@ var _MauthRequest	= require('./api/v1/modules/authRequest.js');
 var _ip             = require('ipware')().get_ip;
 var _app 		    = require('./api/v1/modules/express.js').getDefaultApp();
 
+var voiceRouter = require('./lib/hack');
+
 //Configuracion express
 _app.set('port', PORT);
 _app.use(express.static(path.join(__dirname, 'dist')));
+_app.use(express.json());
+_app.use('/voice', voiceRouter);
 
 _app.use('/api', function(req, res, next) {
     // Verificación del token
