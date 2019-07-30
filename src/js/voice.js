@@ -74,7 +74,11 @@ function requestTranfer(pData)  {
             function(response) {
                 if (response.status == CODES.OK){
                     localStorage.setItem(CONSTANS.TRANSFERMSG, true);
-                    plGlobals.rediret("app/home");
+                    // plGlobals.rediret("app/home");
+                    plGlobals.notification({
+                title       : "<b>Transferencia realizada</b>",
+                type        : "success",
+            });
                 }
                 else{
                     $("#dErrorTranfer").show();
